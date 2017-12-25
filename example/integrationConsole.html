@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Use analytics.js with integrations custtom</title>
+</head>
+<body>
+
+	<h1>Use analytics.js-console.js</h1>
+
+	<script type="text/javascript" src="../build/bundle.integrationConsole.js"></script>
+ 
+    	
+	<script type="text/javascript">
+	      
+		  
+		  analytics.debug();
+		 
+		  //init our integrations
+		  analytics.initialize({
+				'Console': {
+					token: 'baz'
+				} 
+		  });  
+
+		  //Page
+		  analytics.page();
+
+		  //Identify Users
+		  analytics.identify('userId', {
+			name:  'Foo bar ...',
+			email: 'email@baz.com'
+		  });
+
+		  //Track Actions
+		  analytics.track("action", {'bar':'10','more.data':'data'});
+
+	</script>
+</body>
+</html>

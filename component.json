@@ -1,0 +1,20 @@
+{
+    "name": "analytics",
+    "main": "lib/index.anlytics.js",
+    "repo": "segmentio/analytics.js",
+    "description": "The hassle-free way to integrate analytics into any web application.",
+    "version": "2.11.0",
+    "keywords": [
+      "analytics",
+      "analytics.js",
+      "segment",
+      "segment.io"
+    ],
+    "dependencies": {
+      "component/each": "0.0.1",
+      "segmentio/analytics.js-core": "^2.10.0",
+      "segment-integrations/analytics.js-integration-google-analytics": "1.0.0",
+      "segment-integrations/analytics.js-integration-google-tag-manager": "1.0.0",
+      "segment-integrations/analytics.js-integration-segmentio": "1.0.0"     
+    }
+  }
