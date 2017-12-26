@@ -16,6 +16,7 @@
    npm install is --save
    npm install @segment/to-iso-string --save
    npm install @ndhoule/extend --save
+   npm install parse --save
 
 4. Dependencias Desarrollo
 
@@ -40,3 +41,13 @@
    > browserify example\build.logz.js -o build\bundle.integrationLogz.js
 
    Visualizar archivo example/integrationLogz.html (Desde un servidor Web)
+
+
+   Example c: Consumir analytics.js-parse.js
+
+   Ejecutar commando para generar javascript para navegador:
+
+   > browserify example\build.parse.js -o build\bundle.parse.js
+
+   Visualizar archivo example/integrationParse.html (Desde un servidor Web)
+ 

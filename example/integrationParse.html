@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Use analytics.js with integrations custtom</title>
+</head>
+<body>
+
+	<h1>Use analytics.js-parse.js</h1>
+
+	<script type="text/javascript" src="../build/bundle.parse.js"></script>
+ 
+    	
+	<script type="text/javascript">
+	      
+		  
+		  analytics.debug();
+		 
+		  //init our integrations
+		  analytics.initialize({
+				'Parse': {
+					appId: '123',
+					serverURL: 'http://localhost:1337/parse',
+					classTrack : 'pageTrack'
+				} 
+		  });  
+ 
+		  //Page
+		  //analytics.page();
+
+		  //Identify Users
+		  /*
+		  analytics.identify('userId', {
+			name:  'Foo bar ...',
+			email: 'email@baz.com'
+		  });
+		  */
+
+		  //Track Actions
+		  analytics.track("action.test", {'bar':'10','more':'data','save':'info parsePlataform'});
+
+	</script>
+</body>
+</html>
